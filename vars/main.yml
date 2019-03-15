@@ -1,2 +1,13 @@
+# vars file for git-lfs
 ---
-# This space intentionally left blank.
+git_lfs_repositories:
+  - type: deb
+    url: "https://packagecloud.io/github/git-lfs/{{ ansible_distribution | lower }}/ {{ ansible_distribution_release }}"
+    component: main
+
+git_lfs_dependencies_pre:
+  - debian-archive-keyring
+  - apt-transport-https
+
+git_lfs_dependencies:
+  - git-lfs
