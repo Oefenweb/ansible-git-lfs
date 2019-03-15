@@ -1,0 +1,7 @@
+# test file for git-lfs
+---
+- hosts: localhost
+  connection: local
+  become: true
+  roles:
+    - ../../

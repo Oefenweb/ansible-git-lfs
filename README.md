@@ -1,25 +1,43 @@
-# Ansible role to Github GIT LFS
+## git-lfs
 
-Installs Git LFS, "an open source Git extension for versioning large files", on any RHEL/CentOS or Debian/Ubuntu Linux system. Source of packages is [package cloud](https://packagecloud.io/github/git-lfs/)
+[![Build Status](https://travis-ci.org/Oefenweb/ansible-git-lfs.svg?branch=master)](https://travis-ci.org/Oefenweb/ansible-git-lfs) [![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-git--lfs-blue.svg)](https://galaxy.ansible.com/Oefenweb/git-lfs)
 
-![Build Status](https://travis-ci.org/pedrocarmona/github-git-lfs.svg?branch=master)
+Set up (the latest) [Git Large File Storage (LFS)](https://git-lfs.github.com/) in Debian-like systems.
 
-Sponsored by [BidMath](http://bidmath.com/)
+#### Requirements
 
-## Requirements
+* `debian-archive-keyring` (will be installed)
+* `apt-transport-https` (will be installed)
 
-- { role: pedrocarmona.github-git-lfs }
+#### Variables
 
-It depends on ansible 2.1, for earlier versions, please checkout this [tag](https://github.com/BidMath/github-git-lfs/releases/tag/v1.2.0)
+None
 
-## Example Playbook
+## Dependencies
+
+None
+
+## Recommended
+
+* `ansible-latest-git` ([see](https://github.com/Oefenweb/ansible-latest-git))
+
+#### Example
 
 ```yaml
-- hosts: servers
+---
+- hosts: all
   roles:
-    - { role: pedrocarmona.github-git-lfs }
+    - git-lfs
 ```
 
-## License
+#### License
 
-MIT / BSD
+MIT
+
+#### Author Information
+
+Mischa ter Smitten (based on work of [Pedro Carmona](https://github.com/pedrocarmona))
+
+#### Feedback, bug-reports, requests, ...
+
+Are [welcome](https://github.com/Oefenweb/ansible-git-lfs/issues)!

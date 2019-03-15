@@ -1,8 +1,0 @@
----
-- hosts: localhost
-  become: true
-  vars:
-    user: deploy
-    group: deploy
-  roles:
-    - github-git-lfs

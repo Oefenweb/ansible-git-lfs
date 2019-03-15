@@ -1,23 +1,23 @@
+# meta file for git-lfs
 ---
-dependencies:
-  - src: geerlingguy.git
-
 galaxy_info:
-  author: pedrocarmona
-  company: BidMath
-  description: Git Large File Storage
-  license: "license (BSD, MIT)"
-  min_ansible_version: 2.1
+  role_name: git-lfs
+  author: Mischa ter Smitten
+  company: Oefenweb.nl B.V.
+  description: Set up (the latest) Git Large File Storage (LFS) in Debian-like systems
+  license: MIT
+  min_ansible_version: 2.5.0.0
   platforms:
-  - name: EL
-    versions:
-    - all
-  - name: Debian
-    versions:
-    - all
-  - name: Ubuntu
-    versions:
-    - all
-  categories:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+  galaxy_tags:
     - development
     - system
+dependencies: []

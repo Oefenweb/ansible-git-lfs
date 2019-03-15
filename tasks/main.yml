@@ -1,8 +1,13 @@
+# tasks file for git-lfs
 ---
-- include: redhat.yml
-  when: ansible_os_family == 'RedHat'
-  tags: ['git-lfs']
+- include: repository.yml
+  tags:
+    - configuration
+    - git-lfs
+    - git-lfs-repository
 
-- include: debian.yml
-  when: ansible_os_family == 'Debian'
-  tags: ['git-lfs']
+- include: install.yml
+  tags:
+    - configuration
+    - git-lfs
+    - git-lfs-install
