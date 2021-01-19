@@ -8,6 +8,7 @@ git_lfs_repositories:
 git_lfs_dependencies_pre:
   - debian-archive-keyring
   - apt-transport-https
+  - "{{ git_lfs_gnupg_package }}"
 
 git_lfs_dependencies:
   - git-lfs
