@@ -1,4 +1,4 @@
-# vars file for git-lfs
+# vars file
 ---
 git_lfs_repositories:
   - type: deb

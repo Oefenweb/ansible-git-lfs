@@ -1,3 +1,3 @@
-# defaults file for git-lfs
+# defaults file
 ---
 git_lfs_gnupg_package: gnupg

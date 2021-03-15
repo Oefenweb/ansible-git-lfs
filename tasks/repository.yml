@@ -1,4 +1,4 @@
-# tasks file for git-lfs
+# tasks file
 ---
 - name: repository | install dependencies (pre)
   apt:
