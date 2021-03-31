@@ -1,7 +1,7 @@
 ## git-lfs
 
 [![CI](https://github.com/Oefenweb/ansible-git-lfs/workflows/CI/badge.svg)](https://github.com/Oefenweb/ansible-git-lfs/actions?query=workflow%3ACI)
-[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-git--lfs-blue.svg)](https://galaxy.ansible.com/Oefenweb/git-lfs)
+[![Ansible Galaxy](http://img.shields.io/badge/ansible--galaxy-git--lfs-blue.svg)](https://galaxy.ansible.com/Oefenweb/git_lfs)
 
 Set up (the latest) [Git Large File Storage (LFS)](https://git-lfs.github.com/) in Debian-like systems.
 
