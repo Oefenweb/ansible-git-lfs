@@ -2,7 +2,7 @@
 ---
 galaxy_info:
   namespace: oefenweb
-  role_name: git-lfs
+  role_name: git_lfs
   author: Mischa ter Smitten
   company: Oefenweb.nl B.V.
   description: Set up (the latest) Git Large File Storage (LFS) in Debian-like systems
