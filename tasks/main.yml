@@ -1,12 +1,12 @@
 # tasks file
 ---
-- include: repository.yml
+- ansible.builtin.import_tasks: repository.yml
   tags:
     - configuration
     - git-lfs
     - git-lfs-repository
 
-- include: install.yml
+- ansible.builtin.import_tasks: install.yml
   tags:
     - configuration
     - git-lfs
