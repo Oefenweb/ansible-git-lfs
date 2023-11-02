@@ -28,7 +28,7 @@ None
 ---
 - hosts: all
   roles:
-    - git-lfs
+    - oefenweb.git-lfs
 ```
 
 #### License
