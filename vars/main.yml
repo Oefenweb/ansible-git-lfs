@@ -1,14 +1,18 @@
 # vars file
 ---
+git_lfs_keyring_src: https://packagecloud.io/github/git-lfs/gpgkey
+git_lfs_keyring_dst: /usr/share/keyrings/git-lfs.gpg
 git_lfs_repositories:
-  - type: deb
+  - type: "deb [signed-by={{ git_lfs_keyring_dst }}]"
     url: "https://packagecloud.io/github/git-lfs/{{ ansible_distribution | lower }}/ {{ ansible_distribution_release }}"
     component: main
 
 git_lfs_dependencies_pre:
-  - debian-archive-keyring
+  - software-properties-common
+  - dirmngr
   - apt-transport-https
-  - "{{ git_lfs_gnupg_package }}"
+  - wget
+  - coreutils
 
 git_lfs_dependencies:
   - git-lfs

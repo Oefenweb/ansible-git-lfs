@@ -1,4 +1,4 @@
-# tasks file
+x# tasks file
 ---
 - name: install | dependencies
   ansible.builtin.apt:
@@ -7,6 +7,7 @@
   tags:
     - git-lfs-install-dependencies
 
+# TODO: Make use of git_config_info
 - name: install | configure | check | before
   community.general.git_config:
     list_all: true
