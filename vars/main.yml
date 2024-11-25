@@ -6,6 +6,11 @@ git_lfs_repositories:
   - type: "deb [signed-by={{ git_lfs_keyring_dst }}]"
     url: "https://packagecloud.io/github/git-lfs/{{ ansible_distribution | lower }}/ {{ ansible_distribution_release }}"
     component: main
+  # TODO: Remove in next major release
+  - type: deb
+    url: "https://packagecloud.io/github/git-lfs/{{ ansible_distribution | lower }}/ {{ ansible_distribution_release }}"
+    component: main
+    state: absent
 
 git_lfs_dependencies_pre:
   - software-properties-common
