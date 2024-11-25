@@ -21,7 +21,7 @@
 
 - name: repository | (keyring) file | download  # noqa command-instead-of-module risky-shell-pipe
   ansible.builtin.shell: >
-    wget -O- {{ git_lfs_keyring_src }} | gpg --dearmor | tee {{ git_lfs_keyring_dst }}
+    wget -O- {{ git_lfs_keyring_src }} | gpg --dearmor | tee {{ git_lfs_keyring_dst }} > /dev/null
   args:
     creates: "{{ git_lfs_keyring_dst }}"
   tags:
