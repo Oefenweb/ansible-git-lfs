@@ -11,7 +11,6 @@ Set up (the latest) [Git Large File Storage (LFS)](https://git-lfs.github.com/) 
 * `dirmngr` (will be installed)
 * `apt-transport-https` (will be installed)
 * `wget` (will be installed)
-* `coreutils` (will be installed)
 
 #### Variables
 
